@@ -44,6 +44,6 @@ const app = Vue.createApp({
         let itemIndex = this.cart.indexOf(id);
         this.cart.splice(itemIndex, 1);
       }
-    }
-  }
+    },
+  },
 });

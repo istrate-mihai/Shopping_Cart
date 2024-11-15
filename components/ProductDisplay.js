@@ -2,20 +2,21 @@ app.component('product-display', {
   props: {
     premium: {
       type: Boolean,
-      required: true
+      required: true,
     },
     product: {
       type: Array,
       required: true,
     },
   },
-  template: 
+  template:
   /*html*/
   `<div class="product-display">
     <div class="product-container">
       <div class="product-image">
-        <img v-bind:src="image">
+        <img :src="image" alt="product-image" loading="lazy" />
       </div>
+
       <div class="product-info">
         <h1>{{ title }}</h1>
 

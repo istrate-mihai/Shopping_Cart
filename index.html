@@ -20,7 +20,8 @@
           :product="product"
           @add-to-cart="updateCart"
           @remove-from-cart="updateCart"
-          ></product-display>
+          >
+        </product-display>
       </div>
     </div>
 
@@ -34,7 +35,7 @@
 
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('#app');
+      app.mount('#app');
     </script>
   </body>
 </html>
